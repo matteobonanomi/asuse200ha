@@ -12,8 +12,24 @@ The present guide aims at providing some guidelines for the optimization of any 
 \end{abstract}
 
 \section{Which distro?}
-Write your subsection text here.
+This guide is not about hey-this-distro-is-absolutely-the best bull***ts. The is no perfect distro, especially for this kind of laptop! It has a modest hardware, hence modest performance. Moreover, the hardware is not Linux freindly at all... this is the most tricky part and this is what this guide is about. 
 
+Nevertheless, I list here some of the suggested choices for new users or intermediete Linux users that don't want to spend so much time reading posts in forums trying to find the best option for this machine. 
+
+\subsection{Ubuntu and Debian-based distros}
+
+\begin{itemize}
+	\item For those who are not much skilled with Linux and especially for new users, I warmly suggest an Ubuntu-based distro. In particular Lubuntu, which is the lightest official Ubuntu flavor and features a classic desktop environment like LXDE. My favourite Ubuntu flavor is Xubuntu, featureing XFCE Desktop Environment: it is not much heavier than Xubuntu and its user experience is far way more complete. This is another good option, especially for its long-term support (usually 3 years) what it comes to LTS. 
+	\item In any case, choose an LTS version of Ubuntu, as updated as you can, for several good reasons. First of all an LTS is an LTS, it is a long-term supported distro, so you don't have to worry about updating it every few months. Moreover, non-LTS Ubunntu versions tend to be unreliable and unstable. Since the poor hardware of this machine is already a little bit unreliable, I can't see any good reason to worsen the actual situation. Go for an LTS, the more updated, the more chance you have to see everything working after the installation.
+	\item If you want to stick with Debian, you can. Please remember that you will need proprietary driver to hope to have a reasonable user experience with this netbook, hence I don't suggest Debian and its strict non-free software management to a new user. Moreover, Debian stable tends to be quite outdated, and you will need recent Linux kenrel versions to have the most of the hardware recognized out-of-the-box. If you know what to do, I think that Debian testing or Sid with Xfce/Lxde or i3WM could be a good option, even though not for every user.
+	\item I have tested Xubuntu 18.04 and Lubuntu 18.04 on Asus E200HA and I can guarantee that everything essential (except audio) works fine out of the box: graphic card, wifi card, keyboard display brightness, good battery life. 
+\end{itemize}
+
+\subsection{Arch-based distros}
+\begin{itemize}
+	\item Arch Linux wiki has some very good tips to improve Linux performance and reliability on out machine. Hence, of course Arch Linux is suggested! It is always updated and the first official patches for the audio recognition will arrive for sure in Arch. Nevertheless, it is not for basic users. It could be tricky to configure everything, so I assume that if you are gonna choose Arch, you know what you are doing.
+	\item I think that a very good option is Manjaro Linux, in particular its official XFCE version. I am currently writing from Manjaro Linux i3WM Community Edition and it is extremely fast and reliable on this netbook. It is a interesting distro, rollis as Arch, but muuch more easier to manage since it has its own stable repository that makes life easier for new users. Everything works ot of the box, just as Ubuntu does. Like Ubuntu, audio does not work, since there is not official kernel patch to figure that out (at the moment of writing).
+\end{itemize}
 
 \section{Conclusion}
 Write your conclusion here.
