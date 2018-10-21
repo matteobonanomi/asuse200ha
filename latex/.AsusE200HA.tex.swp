@@ -5,6 +5,10 @@
 \title{How to optimize Linux on Asus E200HA}
 \author{matteo bonanomi}
 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% TITLE, ABSTRACT AND TABLE OF CONTENTS
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
 \maketitle
 
 \begin{abstract}
@@ -14,6 +18,10 @@ The present guide aims at providing some guidelines for the optimization of any 
 \tableofcontents
 
 \newpage
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% DISTRO SUGGESTIONS
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \section{Which distro?}
 This guide is not about hey-this-distro-is-absolutely-the best bull***ts. The is no perfect distro, especially for this kind of laptop! It has a modest hardware, hence modest performance. Moreover, the hardware is not Linux freindly at all... this is the most tricky part and this is what this guide is about. 
@@ -34,6 +42,10 @@ Nevertheless, I list here some of the suggested choices for new users or interme
 	\item Arch Linux wiki has some very good tips to improve Linux performance and reliability on out machine. Hence, of course Arch Linux is suggested! It is always updated and the first official patches for the audio recognition will arrive for sure in Arch. Nevertheless, it is not for basic users. It could be tricky to configure everything, so I assume that if you are gonna choose Arch, you know what you are doing.
 	\item I think that a very good option is Manjaro Linux, in particular its official XFCE version. I am currently writing from Manjaro Linux i3WM Community Edition and it is extremely fast and reliable on this netbook. It is a interesting distro, rollis as Arch, but muuch more easier to manage since it has its own stable repository that makes life easier for new users. Everything works ot of the box, just as Ubuntu does. Like Ubuntu, audio does not work, since there is not official kernel patch to figure that out (at the moment of writing).
 \end{itemize}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% HARDWARE CONFIGURATION
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \section{Hardware configuration}
 
@@ -70,5 +82,16 @@ In case you have set you multi-monitor confiugration with arandr, please remembe
 
 You can also configure the system to run your custom multi-monitor settings startup. I assume you have already saved the arandr configuration file with tour preferred options inside it. You can open this config file with a text editor. You will read one or more lines of code with arandr configurations. Copy all the lines. Paste all those lines at the end of the text file named \emph{.xinitrc} in your home directory. If not present, create it. Than reboot and check that the new configuration is correctly loaded. 
  
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% SOFTWARE OPTIMIZATION
+% % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\section{Software optimization}
+
+\subsubsection{Improve battery life}
+
+\subsubsection{Remove (or reduce) screen tearing}
+
+\subsubsection{Disable hybernation and suspension}
 
 \end{document}
