@@ -1,40 +1,35 @@
 # Asus E200HA: Linux distro installation and optimization guidelines
 
-This manual provides some guidelines for the installation on Linux distros on 
-Asus E200HA. Such a cheap netbook is not able to perform in a decent way with Windows. Most of the fault is due to 
-a  ridiculous amount of disk space and a poor CPU. Unfortunately, 
+This manual aims at providing guidelines for the installation of Linux distros on 
+Asus E200HA. This little and cheap netbook is not able to have decent performance with Windows 
+and its ridiculous memory (32GB!!!) can't be enough for the heavy proprietary OS. Unfortunately, 
 the hardware (Intel Cherrytrail... looking at you!) is not as linux-friendly as it should be, 
-yet some good improvements can be made. In particular, I will suggest you some tips to optimize 
-performance, stability and battery life, as well as general adivices for the choice of a good 
-distro for this netbook. 
+yet some good improvements can be made. I can guarantee that running Lubuntu or Manjaro Linux on this netbook provides
+a user experience far way more confortable than Windows does. 
 
 ## Getting Started
 
-You are welcome to clone this repo and modify whatever you want.
-A standard user should only download the pdf guide (AsusE200HA_Linux_Guidelines.pdf) and have fun!
-
-In a near future, I will try to collect every step of the guide inside a bash script. For the 
-moment, just read thhe guide... better to learn a little bit than just copy/paste in the 
-terminal, isn't it?
+At the time of writing, I am mostly working on providing a good document, written in LaTex, so 
+that everyone can read, edit and share it. Clone this repo or just download AsusE200HA_Linux_Guidelines.pdf and have fun!
 
 ### Prerequisites
 
 Of course you need to have a AsusE200HA netbook with you! You don't necessarily need to have a 
 distro already installed on it. In fact, the first part of the guide willl suggest some distros, 
-like Ubuntu 18.04 flavors or Manjaro Linux 17.x and above.
-
-I can ensure you that all the guidelines I mention are perfectly valid for any Debian-based, 
-Ubuntu-based or Arch-based distro. Just pay attention specific distro version or flavor I will suggest you.
-It is important to choose a good trade-off between up-to-date software and lightweight software! 
+like Ubuntu 18.04 flavors or Manjaro Linux 17.x and above. I can ensure you that all the guidelines 
+I mention are perfectly valid for any Debian-based, Ubuntu-based or Arch-based distro.
 
 ### Installing
 
-This repo is not about installing Linux, it's about how to optimize it for our specific hardware.
-Please read the suggested distros for this netbook and install one of them.
+* **clone this repo** as a first step. Open AsusE200HA_Linux_Guidelines.pdf.
 
-Carefully the PDF manual AsusE200HA_Linux_Guidelines.pdf and 
-apply every tip step by step, trying to understand what we are doing and especially WHY we are 
-doing so. Learning is better than copying!
+* **Linux distribution**. I need to have a Linux distribution installed on your Asus netbook.
+  Check the first part of the guide about suggested distro and install one of them. 
+  In case you already have a distro installed, please try to understand if it's feasible with tour netbook hardware,
+  since a lightweight distro is a mandatory starting point for the next steps.
+
+* *hardware and performance optimization*. Read carefully and apply this guide step by step to optimize performance,
+  reduce screen tearing, optimize battery life, solve multi-display conflicts and audio issues.
 
 ## Built With
 
@@ -43,9 +38,8 @@ doing so. Learning is better than copying!
 
 ## Contributing
 
-I honestly admit this is one of my first repos on git-based platforms and I doon't expect 
-so much community stuff behind this simple guides. Nevertheless, feel free to contact me in case 
-something is not clear or something else can be added to complete the manual.
+Feel free to contact me in case something is not clear or something else can be added to complete the manual.
+New *contributors* are always welcome!
 
 ## Versioning
 
@@ -54,7 +48,5 @@ I use [Git](https://git-scm.com/) for versioning.
 ## Authors
 
 * **Matteo Bonanomi**
-
-New *contributors* are always welcome!
 
 
