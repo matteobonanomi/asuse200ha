@@ -36,6 +36,10 @@ I mention are perfectly valid for any Debian-based, Ubuntu-based or Arch-based d
 * [TexLive](https://tug.org/texlive/) - LaTex distribution
 * [Gummi](https://github.com/alexandervdm/gummi) - A fast and lightweight LaTex editor
 
+## Licence
+This guide is distributed under GNU General Public License Version 
+3 (GPLv3). For details, please check [LICENCE.txt](license.txt).
+
 ## Contributing
 
 Feel free to contact me in case something is not clear or something else can be added to complete the manual.
