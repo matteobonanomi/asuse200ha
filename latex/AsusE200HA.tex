@@ -12,7 +12,7 @@
 \maketitle
 
 \begin{abstract}
-The present guide aims at providing some guidelines for the optimization of any Linux distro on Asus E200HA. It is not an easy task, since the tiny netbook has not a Linux-friendly hardware (Intel Cherrytrail... looking at you!), yet it can be a decent machine for school/university purposes. I am going to list what I have learned after about six months using this netbook for web browsing, office applications and coding coding coding. Feel free to share these pieces of information, contact me via GitHub and ask for improvements. Enjoy!
+The present guide aims at providing general guidelines for the optimization of Linux distros on Asus E200HA. It is not an easy task, since this netbook has not a Linux-friendly hardware (Intel Cherrytrail... looking at you!), yet it can be a decent machine for school/university purposes. You can expect a relevant improvement in system performance and much more available disk space compared to Windows 10. Everythig I learned in six months of daily usage will be listed in this document. Feel free to share these pieces of information, contact me via GitHub and ask for improvements. Enjoy!  
 \end{abstract}
 
 \tableofcontents
@@ -24,23 +24,15 @@ The present guide aims at providing some guidelines for the optimization of any 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \section{Which distro?}
-This guide is not about hey-this-distro-is-absolutely-the best bull***ts. The is no perfect distro, especially for this kind of laptop! It has a modest hardware, hence modest performance. Moreover, the hardware is not Linux freindly at all... this is the most tricky part and this is what this guide is about. 
+This guide is not about hey-this-distro-is-absolutely-the-best-ever: bull***ts. There is no perfect distro, especially for this kind of laptop! It has a modest hardware, but with the right distro you can deal with it quite well. Moreover, the hardware is not Linux freindly at all... this is the most tricky part and this is what this guide is about. 
 
-Nevertheless, I list here some of the suggested choices for new users or intermediete Linux users that don't want to spend so much time reading posts in forums trying to find the best option for this machine. 
+I list here some of the suggested choices for new users or intermediate Linux users that don't want to spend so much time reading posts in forums/blogs trying to find the best option for this machine. 
 
-\subsection{Ubuntu and Debian-based distros}
-
+\subsection{SUggested distros}
 \begin{itemize}
-	\item For those who are not much skilled with Linux and especially for new users, I warmly suggest an Ubuntu-based distro. In particular Lubuntu, which is the lightest official Ubuntu flavor and features a classic desktop environment like LXDE. My favourite Ubuntu flavor is Xubuntu, featureing XFCE Desktop Environment: it is not much heavier than Xubuntu and its user experience is far way more complete. This is another good option, especially for its long-term support (usually 3 years) what it comes to LTS. 
-	\item In any case, choose an LTS version of Ubuntu, as updated as you can, for several good reasons. First of all an LTS is an LTS, it is a long-term supported distro, so you don't have to worry about updating it every few months. Moreover, non-LTS Ubunntu versions tend to be unreliable and unstable. Since the poor hardware of this machine is already a little bit unreliable, I can't see any good reason to worsen the actual situation. Go for an LTS, the more updated, the more chance you have to see everything working after the installation.
-	\item If you want to stick with Debian, you can. Please remember that you will need proprietary driver to hope to have a reasonable user experience with this netbook, hence I don't suggest Debian and its strict non-free software management to a new user. Moreover, Debian stable tends to be quite outdated, and you will need recent Linux kenrel versions to have the most of the hardware recognized out-of-the-box. If you know what to do, I think that Debian testing or Sid with Xfce/Lxde or i3WM could be a good option, even though not for every user.
-	\item I have tested Xubuntu 18.04 and Lubuntu 18.04 on Asus E200HA and I can guarantee that everything essential (except audio) works fine out of the box: graphic card, wifi card, keyboard display brightness, good battery life. 
-\end{itemize}
-
-\subsection{Arch-based distros}
-\begin{itemize}
-	\item Arch Linux wiki has some very good tips to improve Linux performance and reliability on out machine. Hence, of course Arch Linux is suggested! It is always updated and the first official patches for the audio recognition will arrive for sure in Arch. Nevertheless, it is not for basic users. It could be tricky to configure everything, so I assume that if you are gonna choose Arch, you know what you are doing.
-	\item I think that a very good option is Manjaro Linux, in particular its official XFCE version. I am currently writing from Manjaro Linux i3WM Community Edition and it is extremely fast and reliable on this netbook. It is a interesting distro, rollis as Arch, but muuch more easier to manage since it has its own stable repository that makes life easier for new users. Everything works ot of the box, just as Ubuntu does. Like Ubuntu, audio does not work, since there is not official kernel patch to figure that out (at the moment of writing).
+	\item Manjaro XFCE is a good option. Lightweight and intuitive thanks to XFCE Desktop Environment. Always updated thanks to the rolling Arch-based repos. For this kind of laptop, updated kernel may mean a better support for Intel processor, while a lightweight DE is necessary to guarantee good performance. The only drawback is the little but very friendly community, if you come from Ubuntu-based distro, you have to expect less documentation ready-for-use, but you can always ask for help in its community.
+	\item Other Manjaro flavors. Manjaro comes with many flavors suppoerted by its great community. In this very moment, I am writing from Manjaro i3wm Community Edition. It is great, lightweight and fast... buit it is not for every user, especially if you are new to Linux. Anyway, check out Manjaro flavors, some lightweight options may be interesting.
+	\item Lubuntu 18.04 and Xubuntu 18.04 are the best options for new users approaching Liinux. Especially Xubuntu is easy to manage, easy to customize and familiar to those coming from a Windows experience. Lubuntu is similar, slightly lighter but with less applications and functionalities out-of-the-box. IMHO, Xubuntu with XFCE is great!
 \end{itemize}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % %
