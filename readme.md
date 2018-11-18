@@ -8,27 +8,26 @@ yet some good improvements can be made. I can guarantee that running Lubuntu or 
 a user experience far way more confortable than Windows does. 
 
 ## Getting Started
-
 At the time of writing, I am mostly working on providing a good document, written in LaTex, so 
-that everyone can read, edit and share it. Clone this repo or just download AsusE200HA_Linux_Guidelines.pdf and have fun!
+that everyone can read, edit and share it. Clone this repo:
+
+```
+git clone https://github.com/matteobonanomi/asuse200ha
+```
+
+Open *AsusE200HA_Linux_Guidelines.pdf* contained in *asuse200ha/latex* folder and have fun.
 
 ### Prerequisites
 
-Of course you need to have a AsusE200HA netbook with you! You don't necessarily need to have a 
-distro already installed on it. In fact, the first part of the guide willl suggest some distros, 
-like Ubuntu 18.04 flavors or Manjaro Linux 17.x and above. I can ensure you that all the guidelines 
-I mention are perfectly valid for any Debian-based, Ubuntu-based or Arch-based distro.
+* One Asus E200HA netbook (or similar models... most of my suggestions apply to many other Asus Netbook with Intel Cherrytrail CPU)
+* A Linux distro installed on it. Forget dual-boot, there's not enough memory. 
 
-### Installing
 
-* **clone this repo** as a first step. Open AsusE200HA_Linux_Guidelines.pdf.
+### Installing Linux
 
-* **Linux distribution**. I need to have a Linux distribution installed on your Asus netbook.
-  Check the first part of the guide about suggested distro and install one of them. 
-  In case you already have a distro installed, please try to understand if it's feasible with tour netbook hardware,
-  since a lightweight distro is a mandatory starting point for the next steps.
+* **Choose your distro** in case you do not have any Linux distro installed yet, the first part of the guide will seggest you some examples of distro runnning smoothly on this netbook.
 
-* *hardware and performance optimization*. Read carefully and apply this guide step by step to optimize performance,
+* **hardware and performance optimization** Read carefully and apply this guide step by step to optimize performance,
   reduce screen tearing, optimize battery life, solve multi-display conflicts and audio issues.
 
 ## Built With
