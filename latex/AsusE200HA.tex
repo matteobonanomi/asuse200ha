@@ -104,8 +104,12 @@ systemctl enable tlp-sleep.service
 \end{verbatim}
 In case you want to customize TLP settings, I suggest you to read carefully its documentation \href{https://linrunner.de/en/tlp/docs/tlp-configuration.html}{HERE}.
 
-\subsubsection{Remove screen tearing}
+\subsubsection{Remove screen tearing using Compton}
+As I wrote when talking about suggested distros for this netbook, XFCE is a rocksolid and fast DE. My warm suggestion for ASUS E200HA is ussing an XFCE distro (Linux Mint XFCE, Xubuntu, Manjaro) and take care of an issue that may arise: \textbf{screen tearing}. 
 
+Tearing on nVidia and Intel graphic cards can be tricky to solve as it depends both on the hardware you have and the software you are using. On XFCE I found out that default desktop compositor has not alway the same graphic performance. Tearing when scrolling web pages and watching video is often an issues. The solution I suggest is replacing XFCE default compositor with \textbf{Compton}, a lightweight compositor that guarantees good performance even on low-specs machines. 
+
+Compton is suggested also for LXDE and MATE desktop environments if you experience screen-tearing issues. Compton has a config file that must be optimized for you hardware/software. Installing and confiugring it is a matter of a few minutes, if you know what to do. If you don't, please follow the instruction contained in \textbf{my GitHub repo} ( \href{https://github.com/matteobonanomi/comptonnotearing}{Please click HERE}). You will find a sample config file that you can copy-paste in your XFCE distro and the instruction to make Compton you default compositor at startup. I tested it on Xubuntu 16.04, Xubuntu 18.04 (and equivalent Linux Mint XFCE versions), Manjaro 16.x and Manjaro 17.x. In every case I obtained the complete removal of tearing and a general improvement in terms of UI experience.
 
 \subsubsection{Disable hybernation and suspension}
 
