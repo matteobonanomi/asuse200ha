@@ -112,6 +112,30 @@ Tearing on nVidia and Intel graphic cards can be tricky to solve as it depends b
 Compton is suggested also for LXDE and MATE desktop environments if you experience screen-tearing issues. Compton has a config file that must be optimized for you hardware/software. Installing and confiugring it is a matter of a few minutes, if you know what to do. If you don't, please follow the instruction contained in \textbf{my GitHub repo} ( \href{https://github.com/matteobonanomi/comptonnotearing}{Please click HERE}). You will find a sample config file that you can copy-paste in your XFCE distro and the instruction to make Compton you default compositor at startup. I tested it on Xubuntu 16.04, Xubuntu 18.04 (and equivalent Linux Mint XFCE versions), Manjaro 16.x and Manjaro 17.x. In every case I obtained the complete removal of tearing and a general improvement in terms of UI experience.
 
 \subsubsection{Disable hybernation and suspension}
+At the moment of writing (December 2018) suspension and hybernation are not supported on Intel Cherrytrail devices. They might be supported in a near futere, or using up to date Linux kernels, yet it could be unstable (freezing/crashing while suspending). It is wise to disable any kind of accidental suspension.
+
+On Debian/Ubuntu distros, disable suspension with the command:
+\begin{verbatim}
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+\end{verbatim}
+
+On any Linux distro, you can prevent you netbook from suspending when closing the lid adding the followind lines to \emph{/etc/systemd/logind.conf}:
+\begin{verbatim}
+[Login]
+HandleLidSwitch=ignore
+HandleLidSwitchDocked=ignore
+\end{verbatim}
+When you close the lid, suspension will not happen, but your netbook will consume very little power. This is a good option also for battery saving purposes, even though for long periods (many hours, a few days...) I suggest to simply shut down your machine. 
+
+Finally, if you get the following error message during boot:
+\begin{verbatim}
+Gave up waiting for suspend/resume device
+\end{verbatim}
+You can solve the problem by adding \emph{noresume} to your kernel parameters in \emph{/etc/default/grub}. So, your kernel boot parameters line should look like:
+\begin{verbatim}
+GRUB_CMDLINE_LINUX_DEFAULT="quiet noresume"
+\end{verbatim}
+
 
 
 \end{document}
